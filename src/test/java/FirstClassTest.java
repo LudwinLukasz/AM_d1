@@ -13,4 +13,15 @@ public class FirstClassTest {
         assertEquals(value,FirstClass.hello());
     }
 
+    @Test
+    public void testAdd() {
+        FirstClass firstClass = new FirstClass();
+
+        int result = firstClass.add(5, 4);
+
+        int expected = 9;
+
+        assertEquals(expected, result);
+    }
+
 }
